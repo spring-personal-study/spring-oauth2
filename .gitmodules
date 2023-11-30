@@ -1,0 +1,9 @@
+[submodule "spring-authorization-server"]
+	path = spring-authorization-server
+	url = https://github.com/spring-personal-study/spring-authorization-server.git
+[submodule "spring-authorization-client"]
+	path = spring-authorization-client
+	url = https://github.com/spring-personal-study/spring-authorization-client.git
+[submodule "spring-authorization-resource"]
+	path = spring-authorization-resource
+	url = https://github.com/spring-personal-study/spring-authorization-resource.git
