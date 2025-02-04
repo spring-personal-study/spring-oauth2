@@ -8,6 +8,6 @@ plugins {
 }
 rootProject.name = 'oauth2'
 
-include 'server'
-include 'resource'
-include 'client'
+//include 'server'
+//include 'resource'
+//include 'client'
