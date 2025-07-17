@@ -1,0 +1,92 @@
+*   Trying 127.0.0.1:9000...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to 127.0.0.1 (127.0.0.1) port 9000 (#0)
+> POST /login HTTP/1.1
+> Host: 127.0.0.1:9000
+> User-Agent: curl/7.81.0
+> Accept: */*
+> Cookie: JSESSIONID=B5C40C13E3C134CEA3E490431A769360
+> Content-Type: application/x-www-form-urlencoded
+> Content-Length: 131
+> 
+} [131 bytes data]
+100   131    0     0  100   131      0    647 --:--:-- --:--:-- --:--:--   651* Mark bundle as not supporting multiuse
+< HTTP/1.1 302 
+< Vary: Origin
+< Vary: Access-Control-Request-Method
+< Vary: Access-Control-Request-Headers
+* Replaced cookie JSESSIONID="6BDCD5BEE8136F35B01EFA30F80795A7" for domain 127.0.0.1, path /, expire 0
+< Set-Cookie: JSESSIONID=6BDCD5BEE8136F35B01EFA30F80795A7; Path=/; HttpOnly
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< Pragma: no-cache
+< Expires: 0
+< X-Frame-Options: DENY
+< Location: http://127.0.0.1:9000/oauth2/authorize?response_type=code&client_id=bluebird-default-client&scope=openid%20client.read%20client.create&state=-SiYOTfmZ2P_LzhKJXL8tOJvWmjsJdDHGIDkFmQHh_A%3D&redirect_uri=http://127.0.0.1:8081&nonce=48QqVTQzPwNXZ5_LkdAWOyqHMDgSS0s03M144E7EBWo&continue
+< Content-Length: 0
+< Date: Thu, 17 Jul 2025 06:27:29 GMT
+< 
+100   131    0     0  100   131      0    337 --:--:-- --:--:-- --:--:--   338
+* Connection #0 to host 127.0.0.1 left intact
+* Issue another request to this URL: 'http://127.0.0.1:9000/oauth2/authorize?response_type=code&client_id=bluebird-default-client&scope=openid%20client.read%20client.create&state=-SiYOTfmZ2P_LzhKJXL8tOJvWmjsJdDHGIDkFmQHh_A%3D&redirect_uri=http://127.0.0.1:8081&nonce=48QqVTQzPwNXZ5_LkdAWOyqHMDgSS0s03M144E7EBWo&continue'
+* Switch from POST to GET
+* Found bundle for host 127.0.0.1: 0x561c81f62b50 [serially]
+* Can not multiplex, even if we wanted to!
+* Re-using existing connection! (#0) with host 127.0.0.1
+* Connected to 127.0.0.1 (127.0.0.1) port 9000 (#0)
+> GET /oauth2/authorize?response_type=code&client_id=bluebird-default-client&scope=openid%20client.read%20client.create&state=-SiYOTfmZ2P_LzhKJXL8tOJvWmjsJdDHGIDkFmQHh_A%3D&redirect_uri=http://127.0.0.1:8081&nonce=48QqVTQzPwNXZ5_LkdAWOyqHMDgSS0s03M144E7EBWo&continue HTTP/1.1
+> Host: 127.0.0.1:9000
+> User-Agent: curl/7.81.0
+> Accept: */*
+> Cookie: JSESSIONID=6BDCD5BEE8136F35B01EFA30F80795A7
+> Content-Type: application/x-www-form-urlencoded
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 302 
+< Vary: Origin
+< Vary: Access-Control-Request-Method
+< Vary: Access-Control-Request-Headers
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< Pragma: no-cache
+< Expires: 0
+< X-Frame-Options: DENY
+< Location: http://127.0.0.1:8081?code=Y2UwdUnVDMvWXfQOB_O0qSXF3iL0_ipSOkwv7x6pj10r1D_lmXCpwe5H7_gBWs5IsD-loNmgA0qHs_QUiP9rqIZ3u4ex7-PhIE4zwN3RHpMsnoMwgb0Kh-avuH-B-Jf6&state=-SiYOTfmZ2P_LzhKJXL8tOJvWmjsJdDHGIDkFmQHh_A%3D
+< Content-Length: 0
+< Date: Thu, 17 Jul 2025 06:27:29 GMT
+< 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host 127.0.0.1 left intact
+* Clear auth, redirects to port from 9000 to 8081
+* Issue another request to this URL: 'http://127.0.0.1:8081/?code=Y2UwdUnVDMvWXfQOB_O0qSXF3iL0_ipSOkwv7x6pj10r1D_lmXCpwe5H7_gBWs5IsD-loNmgA0qHs_QUiP9rqIZ3u4ex7-PhIE4zwN3RHpMsnoMwgb0Kh-avuH-B-Jf6&state=-SiYOTfmZ2P_LzhKJXL8tOJvWmjsJdDHGIDkFmQHh_A%3D'
+*   Trying 127.0.0.1:8081...
+* Connected to 127.0.0.1 (127.0.0.1) port 8081 (#1)
+> GET /?code=Y2UwdUnVDMvWXfQOB_O0qSXF3iL0_ipSOkwv7x6pj10r1D_lmXCpwe5H7_gBWs5IsD-loNmgA0qHs_QUiP9rqIZ3u4ex7-PhIE4zwN3RHpMsnoMwgb0Kh-avuH-B-Jf6&state=-SiYOTfmZ2P_LzhKJXL8tOJvWmjsJdDHGIDkFmQHh_A%3D HTTP/1.1
+> Host: 127.0.0.1:8081
+> User-Agent: curl/7.81.0
+> Accept: */*
+> Cookie: JSESSIONID=6BDCD5BEE8136F35B01EFA30F80795A7
+> Content-Type: application/x-www-form-urlencoded
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 
+< Vary: Origin
+< Vary: Access-Control-Request-Method
+< Vary: Access-Control-Request-Headers
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 0
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< Pragma: no-cache
+< Expires: 0
+< X-Frame-Options: DENY
+< Content-Type: text/html;charset=UTF-8
+< Content-Language: en-US
+< Transfer-Encoding: chunked
+< Date: Thu, 17 Jul 2025 06:27:29 GMT
+< 
+{ [753 bytes data]
+100   746    0   746    0     0   1320      0 --:--:-- --:--:-- --:--:--  1320
+* Connection #1 to host 127.0.0.1 left intact

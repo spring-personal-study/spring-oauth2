@@ -1,0 +1,1 @@
+http://127.0.0.1:9000/oauth2/authorize?response_type=code&client_id=bluebird-default-client&scope=openid%20client.read%20client.create&state=-SiYOTfmZ2P_LzhKJXL8tOJvWmjsJdDHGIDkFmQHh_A%3D&redirect_uri=http://127.0.0.1:8081&nonce=48QqVTQzPwNXZ5_LkdAWOyqHMDgSS0s03M144E7EBWo
