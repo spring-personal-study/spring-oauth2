@@ -1,12 +1,12 @@
 [submodule "spring-authorization-server"]
 	path = spring-authorization-server
-	url = https://github.com/spring-personal-study/spring-authorization-server
+	url = ssh://git@192.168.10.236/Gitserver/bosemm/oauth/modules/spring-authorization-server
 	branch = main
 [submodule "spring-authorization-client"]
 	path = spring-authorization-client
-	url = https://github.com/spring-personal-study/spring-authorization-client
+	url = ssh://git@192.168.10.236/Gitserver/bosemm/oauth/modules/spring-authorization-client
 	branch = main
 [submodule "spring-authorization-resource"]
 	path = spring-authorization-resource
-	url = https://github.com/spring-personal-study/spring-authorization-resource
+	url = ssh://git@192.168.10.236/Gitserver/bosemm/oauth/modules/spring-authorization-resource
 	branch = main
